@@ -18,7 +18,7 @@ def augment_image(image_filepath, annotations_filepath, policy_container):
     return img_aug, bbs_aug
 
 
-def generate_augmented_img(img_filepath, annotation_filepath, policy_version, output_img_filepath, output_annotations_filepath, display=True):
+def generate_augmented_img(img_filepath, annotation_filepath, policy_version, output_img_filepath, output_annotations_filepath, display=False):
     if policy_version == 0:
         aug_policy = policies\
             .policies_v0()
